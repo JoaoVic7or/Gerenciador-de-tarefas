@@ -58,7 +58,7 @@ function criarEvento(item){
 
     //Botão adicionar ao calendário
     const calendario = document.createElement('img');
-    calendario.src = "../assets/calendar.svg"
+    calendario.src = "/assets/calendar.svg"
 
     const descricao = document.getElementById('descricao').value
     const config = {
@@ -82,7 +82,7 @@ function criarEvento(item){
 
     //Botão deletar
     const deletar = document.createElement('img')
-    deletar.src = "../assets/deletar.svg"
+    deletar.src = "/assets/deletar.svg"
     const style_deletar = {
         width: "20px",
         cursor: "pointer",
