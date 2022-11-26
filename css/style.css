@@ -1,0 +1,137 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster&family=Nanum+Gothic&family=Raleway:wght@100&display=swap');
+@import url(background.css);
+
+:root{
+    --branco: #FFFFFF;
+    --preto: #000000;
+}
+
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 100vh;
+    width: 100vw;
+    font-family: 'Nanum Gothic', sans-serif;
+}
+.container{
+    width: 90vw;
+    max-width: 940px;
+    min-height: 240px;
+    height: 18vw;
+    margin-top: 10px;
+    background-color: rgba(0, 0, 255, 0.562);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    padding-top: 10px;
+    z-index: 3;
+    border-bottom: 1px solid var(--branco);
+    box-shadow: 0px 0px 10px var(--branco);
+}
+
+.container__form{
+    margin-top: 30px;
+    width: 95%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+h1{
+    font-size: 2rem;
+    color: white;
+    text-align: center;
+}
+
+::-webkit-scrollbar {
+    width: 10px;
+  }
+  
+::-webkit-scrollbar-track {
+    background: none;
+    margin: 10px 0;
+}
+  
+::-webkit-scrollbar-thumb {
+    background: rgb(255, 0, 0);
+    border-radius: 10px;
+}
+  
+::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}
+
+#evento,
+#data,
+#botao_adicionar,
+#descricao{
+    border: 1px solid var(--preto);
+    border-radius: 10px;
+    padding: 10px;
+}
+#descricao{
+    width: 75vw;
+}
+.container__form_secundario{
+    display: flex;
+    justify-content: space-around;
+}
+#botao_adicionar{
+    cursor: pointer;
+    transition: 500ms;
+    padding: 15px;
+    width: 20vw;
+}
+#botao_adicionar:hover{
+    transition: 500ms;
+    background: rgb(201, 201, 201);
+}
+
+
+@media screen and (max-width: 414px){
+    .container{
+        height: 30vh;
+    }
+    .container__form{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        margin-top: 5px;
+    }
+    .container__form_secundario{
+        all: initial;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 10px;
+        width: 100%;
+    }
+    h1{
+        font-size: 1.8rem;
+    }
+    #evento,
+    #data,
+    #descricao{
+        all: initial;
+        border: 1px solid var(--branco);
+        padding: 5px 4px;
+        border-radius: 10px;
+        margin-top: 10px;
+        background: var(--branco);
+        width: 80%;
+    }
+    #botao_adicionar{
+        -webkit-appearance: none;
+        -moz-appearance: none;
+        appearance: none;
+        margin-top: 10px;
+        padding: 4px;
+        width: 70vw;
+    }
+}
